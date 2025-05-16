@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المحفظة - خبزتي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">خبزتي</div>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="terms.html">الشروط والأحكام</a>
+            <a href="signup.html" id="signup-link">تسجيل</a>
+            <a href="login.html" id="login-link">دخول</a>
+            <a href="dashboard.html" id="dashboard-link" style="display: none;">لوحة التحكم</a>
+            <a href="chat.html" id="chat-link" style="display: none;">الدردشة</a>
+            <a href="#" id="logout-link" style="display: none;">تسجيل الخروج</a>
+        </nav>
+        <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <a href="dashboard.html">لوحة التحكم</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="orders.html">الطلبات</a>
+        <a href="notifications.html">الإشعارات</a>
+        <a href="settings.html">الإعدادات</a>
+    </aside>
+
+    <section class="wallet-section" data-aos="fade-up">
+        <h1>محفظتك</h1>
+        <p>إدارة أموالك بسهولة وأمان</p>
+        <div class="balance">
+            <h2>الرصيد الحالي: 150 دينار</h2>
+            <form id="add-funds-form" class="form">
+                <label for="amount">إضافة أموال</label>
+                <input type="number" id="amount" name="amount" placeholder="أدخل المبلغ" min="1" required>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="edinar">إي-دينار</option>
+                    <option value="flouci">فلوسي</option>
+                    <option value="card">بطاقة بنكية</option>
+                </select>
+                <button type="submit" class="cta-button">إضافة</button>
+            </form>
+        </div>
+        <div class="transactions">
+            <h2>سجل المعاملات</h2>
+            <div class="transaction-item" data-aos="fade-up" data-aos-delay="100">
+                <p>إضافة أموال: 50 دينار (إي-دينار)</p>
+                <p class="timestamp">2025-06-01 14:30</p>
+            </div>
+            <div class="transaction-item" data-aos="fade-up" data-aos-delay="200">
+                <p>دفع طلب #123: 25 دينار</p>
+                <p class="timestamp">2025-06-02 09:15</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 خبزتي. جميع الحقوق محفوظة.</p>
+        <p>تواصلوا معنا عبر واتساب: +216 12 345 678</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

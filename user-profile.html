@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف المستخدم - خبزتي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">خبزتي</div>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="terms.html">الشروط والأحكام</a>
+            <a href="signup.html" id="signup-link">تسجيل</a>
+            <a href="login.html" id="login-link">دخول</a>
+            <a href="dashboard.html" id="dashboard-link" style="display: none;">لوحة التحكم</a>
+            <a href="chat.html" id="chat-link" style="display: none;">الدردشة</a>
+            <a href="#" id="logout-link" style="display: none;">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+    <!-- User Profile Section -->
+    <section class="form-section">
+        <h1>تعديل ملف المستخدم</h1>
+        <form id="user-profile-form" class="form">
+           <label for="profile-pic">صورة الملف الشخصي</label>
+<input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+<img id="profile-pic-preview" src="" alt="معاينة الصورة" style="display: none; max-width: 100px; margin-top: 10px;">
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" value="أحمد الصغير" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" value="ahmed@example.com" required>
+
+            <label for="bio">نبذة مختصرة</label>
+            <textarea id="bio" name="bio" placeholder="اكتب نبذة عن نفسك (اختياري)" rows="4">مصمم جرافيك بخبرة 5 سنوات.</textarea>
+
+            <p class="helper-text">تأكد من تحديث بياناتك لتحسين تجربتك</p>
+            <button type="submit" class="cta-button">حفظ التغييرات</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 خبزتي. جميع الحقوق محفوظة.</p>
+        <p>تواصلوا معنا عبر واتساب: +216 12 345 678</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

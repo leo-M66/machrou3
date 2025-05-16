@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خبزتي - منصة الخدمات المستقلة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">خبزتي</div>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="terms.html">الشروط والأحكام</a>
+            <a href="signup.html" id="signup-link">تسجيل</a>
+            <a href="login.html" id="login-link">دخول</a>
+            <a href="dashboard.html" id="dashboard-link" style="display: none;">لوحة التحكم</a>
+            <a href="chat.html" id="chat-link" style="display: none;">الدردشة</a>
+            <a href="#" id="logout-link" style="display: none;">تسجيل الخروج</a>
+        </nav>
+        <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <a href="dashboard.html">لوحة التحكم</a>
+        <a href="wallet.html">المحفظة</a>
+        <a href="orders.html">الطلبات</a>
+        <a href="notifications.html">الإشعارات</a>
+        <a href="settings.html">الإعدادات</a>
+    </aside>
+
+    <section class="hero">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-aos="fade-right">
+                    <img src="https://via.placeholder.com/1200x400?text=عرض+تصميم" alt="عرض تصميم">
+                    <div class="slide-content">
+                        <h2>خصم 20% على التصميم</h2>
+                        <p>اطلب الآن واستفد!</p>
+                        <a href="promotions.html" class="cta-button">استفد الآن</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" data-aos="fade-left">
+                    <img src="https://via.placeholder.com/1200x400?text=عرض+توصيل" alt="عرض توصيل">
+                    <div class="slide-content">
+                        <h2>توصيل مجاني</h2>
+                        <p>للطلبات فوق 30 دينار</p>
+                        <a href="promotions.html" class="cta-button">استفد الآن</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section class="features" data-aos="fade-up">
+        <h2>لماذا خبزتي؟</h2>
+        <div class="feature-item">
+            <h3>طلبات مخصصة</h3>
+            <p>اطلب ما تريد، من التصميم إلى التوصيل.</p>
+        </div>
+        <div class="feature-item">
+            <h3>خدمات جاهزة</h3>
+            <p>اشترِ خدمات الفريلانسرز مباشرة.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 خبزتي. جميع الحقوق محفوظة.</p>
+        <p>تواصلوا معنا عبر واتساب: +216 12 345 678</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

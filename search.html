@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث - خبزتي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">خبزتي</div>
+        <nav class="nav" id="nav-menu">
+            <a href="index.html">الرئيسية</a>
+            <a href="services.html">الخدمات</a>
+            <a href="terms.html">الشروط والأحكام</a>
+            <a href="signup.html" id="signup-link">تسجيل</a>
+            <a href="login.html" id="login-link">دخول</a>
+            <a href="dashboard.html" id="dashboard-link" style="display: none;">لوحة التحكم</a>
+            <a href="chat.html" id="chat-link" style="display: none;">الدردشة</a>
+            <a href="#" id="logout-link" style="display: none;">تسجيل الخروج</a>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h1>ابحث عن خدمات أو فريلانسرز</h1>
+        <form id="search-form" class="search-form">
+            <input type="text" id="search-input" name="search-input" placeholder="ابحث عن تصميم، توصيل، إلخ..." required>
+            <select id="search-category" name="search-category">
+                <option value="">جميع الفئات</option>
+                <option value="design">تصميم وبرمجة</option>
+                <option value="translation">ترجمة</option>
+                <option value="delivery">توصيل</option>
+                <option value="cleaning">تنظيف</option>
+                <option value="errands">قضاء حاجيات</option>
+            </select>
+            <button type="submit" class="cta-button">بحث</button>
+            <button type="reset" id="reset-search" class="cta-button reset-button">إعادة تعيين</button>
+        </form>
+        <div class="search-results" id="search-results">
+            <h2>النتائج</h2>
+            <div class="result-item" data-category="design">
+                <h3>تصميم شعار</h3>
+                <p>يقدمها: أحمد الصغير</p>
+                <p>السعر: 25 دينار</p>
+                <a href="freelancer-profile.html" class="cta-button">عرض التفاصيل</a>
+            </div>
+            <div class="result-item" data-category="delivery">
+                <h3>توصيل خبز</h3>
+                <p>يقدمها: محمد السريع</p>
+                <p>السعر: 5 دينار</p>
+                <a href="freelancer-profile.html" class="cta-button">عرض التفاصيل</a>
+            </div>
+            <div class="result-item" data-category="translation">
+                <h3>ترجمة وثيقة</h3>
+                <p>يقدمها: فاطمة القلم</p>
+                <p>السعر: 20 دينار</p>
+                <a href="freelancer-profile.html" class="cta-button">عرض التفاصيل</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 خبزتي. جميع الحقوق محفوظة.</p>
+        <p>تواصلوا معنا عبر واتساب: +216 12 345 678</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
